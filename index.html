@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body class="body">
+    <div class="background">
+      <div class="todo-heading">
+        <h1>TODO</h1>
+        <img src="./images/icon-sun.svg" alt="" />
+      </div>
+      <form class="todo-form">
+        <button type="submit" class="submit"></button>
+        <input
+          class="todo-input"
+          type="text"
+          placeholder="Create a new todo..." />
+      </form>
+    </div>
+
+    <ul id="list"></ul>
+
+    <template id="list-item-template">
+      <li class="item-list" data-todo-id="">
+        <input type="checkbox" class="todo-checkbox" data-list-item-checkbox />
+        <span data-list-item-text class="todo-text"></span>
+      </li>
+    </template>
+
+    <div class="todo-footer">
+      <p>0 items left</p>
+      <ul class="footer-list">
+        <li>All</li>
+        <li>Active</li>
+        <li>Completed</li>
+      </ul>
+      <p>Clear Completed</p>
+    </div>
+  </body>
+</html>
